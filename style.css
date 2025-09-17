@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+html, body {
+  height: 100%; /* これでvhが安定 */
+}
+
+header {
+  background: #9acd32; /* 黄緑 */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 36px; /* 大きく */
+  font-weight: bold;
+}
+
+/* PC版メニュー */
+#menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  justify-content: center; /* 中央寄せ */
+  flex-wrap: wrap;
+  background: #7fbf2b;
+}
+
+#menu li a {
+  display: block;
+  padding: 12px 18px;
+  color: white;
+  text-decoration: none;
+}
+
+#menu li a:hover {
+  background: #6aa927;
+}
+
+/* ハンバーガーボタン（スマホのみ表示） */
+.menu-btn {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* モバイルメニュー */
+.mobile-menu {
+    position: fixed;       /* 画面固定 */
+    top: 0;
+    right: 0;
+    bottom: 50px;           /* 下余白 */
+    width: 250px;
+    padding-top: 30px;      /* ヘッダー分の余白 */
+    background-color: #d2f5a3;
+    overflow-y: auto;       /* メニュー内スクロール */
+    -webkit-overflow-scrolling: touch; /* iOS対策 */
+    box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+    z-index: 999;
+    transform: translateX(100%); /* 初期は右外に隠す */
+    transition: transform 0.3s ease;
+    border-bottom-left-radius: 15px; /* 下角丸 */
+}
+
+.mobile-menu.show {
+    transform: translateX(0);   /* メニュー表示 */
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #bbb;
+}
+
+.mobile-menu a:hover {
+    background-color: #b8e986;
+}
+
+/* スマホ用 */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
