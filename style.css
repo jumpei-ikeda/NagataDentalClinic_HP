@@ -64,7 +64,6 @@ header {
 /* モバイルメニュー */
 .mobile-menu {
     position: fixed;       /* 画面固定 */
-    top: 0;
     right: 0;
     height: 50vh;          /* 高さを画面の50%に固定 */
     width: 250px;
