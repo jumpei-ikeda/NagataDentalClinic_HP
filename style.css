@@ -30,6 +30,7 @@ nav.mobile-menu {
     z-index:1000; overflow-y:auto; box-shadow: -2px 0 5px rgba(0,0,0,0.2);
 }
 nav.mobile-menu a { padding:10px 20px; text-decoration:none; color:#3a7d44; font-weight:bold; border-bottom:1px solid #c0f2b2; }
+nav.mobile-menu.show { display: flex; /* flex-column で表示 */ }
 
 /* main */
 main { max-width:1200px; margin:0 auto; padding:20px; }
