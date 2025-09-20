@@ -67,7 +67,7 @@ header {
     right: 0;
     height: 95vh;          /* 高さを画面の80%に固定 */
     width: 250px;
-    padding-top: 30px;      /* ヘッダー分の余白 */
+    padding-top: 15px;      /* ヘッダー分の余白 */
     background-color: #d2f5a3;
     overflow-y: auto;       /* メニュー内スクロール */
     -webkit-overflow-scrolling: touch; /* iOS対策 */
