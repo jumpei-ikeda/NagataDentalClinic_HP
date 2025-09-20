@@ -25,7 +25,7 @@ nav.pc-menu a:hover { background-color:#c0f2b2; }
 
 /* モバイルメニュー */
 nav.mobile-menu {
-    display:none; position:fixed; top:0; right:0; height:100%; width:250px;
+    display:none; position:fixed; top:0; right:0; height:98%; width:250px;
     background-color:#e1ffe2; padding-top:80px; flex-direction:column; gap:10px;
     z-index:1000; overflow-y:auto; box-shadow: -2px 0 5px rgba(0,0,0,0.2);
 }
