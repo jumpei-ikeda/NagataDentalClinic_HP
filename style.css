@@ -65,7 +65,7 @@ header {
 .mobile-menu {
     position: fixed;       /* 画面固定 */
     right: 0;
-    height: 80vh;          /* 高さを画面の80%に固定 */
+    height: 95vh;          /* 高さを画面の80%に固定 */
     width: 250px;
     padding-top: 30px;      /* ヘッダー分の余白 */
     background-color: #d2f5a3;
