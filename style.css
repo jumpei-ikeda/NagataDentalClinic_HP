@@ -28,6 +28,8 @@ nav.mobile-menu {
     display:none; position:fixed; top:0; right:0; height:90vh; width:250px;
     background-color:#e1ffe2; padding-top:15px; flex-direction:column; gap:10px;
     z-index:1000; overflow-y:auto; box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+    border-bottom-left-radius: 20px;  /* 下左だけ丸く */
+    padding-bottom: 30px;             /* 下に余白を作る */
 }
 nav.mobile-menu a { padding:10px 20px; text-decoration:none; color:#3a7d44; font-weight:bold; border-bottom:1px solid #c0f2b2; }
 nav.mobile-menu.show { display: flex; /* flex-column で表示 */ }
